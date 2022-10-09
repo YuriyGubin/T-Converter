@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var farenheitLabel: UILabel!
+    @IBOutlet var fahrenheitLabel: UILabel!
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var slider: UISlider! {
         didSet {
@@ -24,7 +24,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderChenged(_ sender: UISlider) {
-        celsiusLabel.text = "\(Int(sender.value))ºC"
+        let celsiusTemperature = Int(sender.value)
+        celsiusLabel.text = "\(celsiusTemperature)ºC"
+        let fahrenheitTemperature = Int(sender.value * 9 / 5 + 32)
+        fahrenheitLabel.text = "\(fahrenheitTemperature)ºF"
     }
     
 }
