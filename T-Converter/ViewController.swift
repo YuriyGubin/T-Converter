@@ -11,17 +11,20 @@ class ViewController: UIViewController {
 
     @IBOutlet var farenheitLabel: UILabel!
     @IBOutlet var celsiusLabel: UILabel!
-    @IBOutlet var slider: UISlider!
+    @IBOutlet var slider: UISlider! {
+        didSet {
+            slider.maximumValue = 500
+            slider.minimumValue = 0
+            slider.value = 0
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       setupElements()
     }
 
-    private func setupElements() {
-        slider.minimumValue = 0
-        slider.maximumValue = 500
-        slider.value = 0
+    @IBAction func sliderChenged(_ sender: UISlider) {
+        celsiusLabel.text = "\(Int(sender.value))ºC"
     }
     
 }
