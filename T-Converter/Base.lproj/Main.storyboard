@@ -59,6 +59,11 @@
                             <constraint firstItem="Xoh-IU-Hrs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yC2-zF-uBI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="RZN-b9-iUw" id="GPk-PZ-1FH"/>
+                        <outlet property="farenheitLabel" destination="wF2-bo-1ET" id="mQN-bd-cct"/>
+                        <outlet property="slider" destination="Suk-xT-ZUk" id="e3y-70-LBY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

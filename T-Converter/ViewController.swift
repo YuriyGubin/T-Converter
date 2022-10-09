@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var farenheitLabel: UILabel!
+    @IBOutlet var celsiusLabel: UILabel!
+    @IBOutlet var slider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
