@@ -18,10 +18,6 @@ class ViewController: UIViewController {
             slider.value = 0
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBAction func sliderChenged(_ sender: UISlider) {
         let celsiusTemperature = Int(sender.value)
