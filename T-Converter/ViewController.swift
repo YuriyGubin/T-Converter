@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var celsiusLabel: UILabel!
     @IBOutlet var slider: UISlider! {
         didSet {
-            slider.maximumValue = 500
+            slider.maximumValue = 100
             slider.minimumValue = 0
             slider.value = 0
         }
